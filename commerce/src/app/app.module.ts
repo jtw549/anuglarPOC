@@ -1,16 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientJsonpModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
-import { NotesModule } from './notes/notes.module';
-import { UsersModule } from './users/users.module';
-import { FriendsModule } from './friends/friends.module';
-import { InventoryModule } from './inventory/inventory.module';
-import { MediaModule } from './media/media.module';
-import { WarrantyModule } from './warranty/warranty.module';
-import { SocialAccountModule } from './social-account/social-account.module';
 import { SharedModule } from './shared/shared.module';
+import { RestmodelModule } from './restmodel/restmodel.module';
 
 @NgModule({
   declarations: [
@@ -18,14 +14,11 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    NotesModule,
-    UsersModule,
-    FriendsModule,
-    InventoryModule,
-    MediaModule,
-    WarrantyModule,
-    SocialAccountModule,
-    SharedModule
+    HttpClientModule,
+    SharedModule,
+    HttpClientJsonpModule,
+    SharedModule,
+    RestmodelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

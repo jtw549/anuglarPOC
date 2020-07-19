@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { InventoryService } from './inventory.service';
 
 
 
@@ -7,6 +8,7 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   imports: [
     CommonModule
-  ]
+  ],
+  providers: [InventoryService]
 })
 export class InventoryModule { }

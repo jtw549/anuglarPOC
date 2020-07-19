@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { WarrantyService } from './warranty.service';
 
 
 
@@ -7,6 +8,7 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   imports: [
     CommonModule
-  ]
+  ],
+  providers:[WarrantyService]
 })
 export class WarrantyModule { }
